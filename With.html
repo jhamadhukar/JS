@@ -1,0 +1,22 @@
+<html>
+<head><title>With in javascript</title>
+<script>
+	var Student = {
+		name: "madhukar",
+		calculateFee: function(){
+			name="abc";
+			console.log(name);
+		}
+	};
+	 
+	 with(Student){
+		console.log(name);
+		calculateFee();
+		console.log(name);
+		name='abcddddd';
+	 }
+	 console.log(Student.name);
+</script>
+</head>
+<body></body>
+</html>

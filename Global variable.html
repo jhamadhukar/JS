@@ -1,0 +1,15 @@
+<html>
+<head><title>Global variable</title>
+<script>
+	var myGlobalVar =1;
+	function func(){
+		console.log(myGlobalVar);
+		var myGlobalVar =2;
+		console.log(myGlobalVar);
+	}
+	func();
+	console.log(myGlobalVar);
+</script>
+</head>
+<body></body>
+</html>

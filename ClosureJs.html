@@ -1,0 +1,19 @@
+<html>
+<head><title>Closure Javascript Test</title>
+<script>
+function Add(x)
+{
+	return function(y){
+		return x + y;
+	}
+}
+
+var add5 = Add(5);
+var add10 = Add(10);
+
+console.log(add5(2));
+console.log(add10(5));
+</script>
+</head>
+<body></body>
+</html>

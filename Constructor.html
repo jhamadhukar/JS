@@ -1,0 +1,26 @@
+<html><head>
+<script>
+function customer(customerId, customerName, gender){
+	this.customerId = customerId;
+	this.customerName = customerName;
+	this.gender = gender;
+	this.tostring= function(){
+		return this.customerId + " " + this.customerName + " " + this.gender;
+	};
+	toString= function(){
+		return "HI";
+	};
+}
+
+var customer1 =new customer('1', 'Madhukar', 'Male');
+var customer2 =new customer('2', 'Amit', 'Male');
+var customer3 = customer('3', 'Abc', 'FeMale');
+console.log(customer1.tostring());
+console.log(customer2.tostring());
+console.log(customer.toString());
+</script>
+</head>
+
+<body></body>
+
+</html>
