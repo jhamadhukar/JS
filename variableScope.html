@@ -1,0 +1,17 @@
+<html>
+<head><title>Global variable</title>
+<script>
+	a =1;
+	b =2
+	function func(){
+		console.log(a);
+		var a =2;
+		var b;
+		console.log(a +'---'+ b);
+	}
+	func();
+	console.log(a +'---'+ b);
+</script>
+</head>
+<body></body>
+</html>
